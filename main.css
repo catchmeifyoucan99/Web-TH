@@ -1,0 +1,119 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 0px rgba(70,144,46,0.8);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(70,144,46,0.8);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(70,144,46,0.8);
+}
+.navbar--mid {
+    display: flex;
+    margin-right: 100px;
+
+}
+
+.navbar--left,
+.navbar--right
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px 35px 0px 35px;
+    
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.navbar--left div{
+    text-transform: uppercase;
+    font-weight: 600;    
+}
+
+li{
+    list-style: none !important;
+}
+
+.navbar > div {
+    position: relative
+}
+
+.list--pro {
+    position: absolute;
+    width: 100px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px 1px rgba(70,144,46,0.8);
+    -webkit-box-shadow: 1px 2px 5px 1px rgba(70,144,46,0.8);
+    -moz-box-shadow: 1px 2px 5px 1px rgba(70,144,46,0.8);
+    right: 92px; 
+    padding: 10px 0 10px 10px;   
+    background-color: white;
+    
+}
+
+.list--pro > li {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.list--pro > li > ul {
+    padding-left: 10px;  
+    font-size: 11px;
+}
+
+.list--pro > li > ul > li > a{
+    color:#4b4b4b;
+} 
+
+.navbar--left > *,
+.navbar--right > * 
+{
+    margin: 10px;
+}
+
+.navbar--right > div:first-child {
+    position: relative;
+}
+
+.navbar--right > div:first-child input {
+    width: 96%;
+    border: none;
+    border-bottom: 1px solid;  
+}
+
+.navbar--right > div:first-child i{
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+}
+
+.navbar--icon__user:hover,
+.navbar--icon__bag:hover
+{
+    color: rgba(135, 130, 130, 0.8)
+}
+
+.navbar--main > a:hover {
+    color: rgba(2, 65, 6, 0.981);
+}
+.navbar--intro > a:hover {
+    color: rgba(2, 65, 6, 0.981);
+}
+
+.navbar--pro > a:hover {
+    color: rgba(2, 65, 6, 0.981);
+}
+
+.navbar--info > a:hover {
+    color: rgba(2, 65, 6, 0.981);
+}
