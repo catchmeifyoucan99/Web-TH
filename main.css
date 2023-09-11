@@ -58,7 +58,13 @@ li{
     right: 100px; 
     padding: 10px 0 10px 10px;   
     background-color: white;
-    
+    visibility: hidden;
+}
+
+
+.navbar--pro:hover .list--pro {
+    display: block;
+    visibility: visible;
 }
 
 .list--pro > li {
