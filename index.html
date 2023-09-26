@@ -9,7 +9,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <meta name="description" content="Thay đổi để cuộc sống tốt hơn!. Nhanh tay mua các sản phẩm làm bằng tự nhiên không gây ô nhiểm một trường để bảo vệ môi trường">     
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="fontawesome.js">
         <!--Icon-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--Font -->
@@ -17,44 +16,64 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
-
+    <script src="code.js"></script>
     <body> 
-        <div class="navbar">
-            <div class="navbar--left">             
-                <div class="navbar--main"><a href="">Trang Chủ</a></div>
-                <div class="navbar--intro"><a href="">Giới Thiệu</a></div>
-                <div class="navbar--pro"><a href="">Sản Phẩm</a>
-                    <div class="list--pro">
-                        <li class="cup--list"><a href="">Ly</a>
-                            <ul>
-                                <li><a href="">Ly Gỗ</a></li>
-                                <li><a href="">Ly Sứ</a></li>
-                                <li><a href="">Ly Giấy</a></li>
-                            </ul> 
-                        </li>                      
-                        <li class="bowl-list"><a href="">Chén</a>
-                            <ul>
-                                <li><a href="">Chén Inox</a></li>
-                                <li><a href="">Chén Sứ</a></li>
-                                <li><a href="">Chén Giấy</a></li>
-                            </ul> 
-                        </li>                      
+        <header>           
+            <div class="navbar">
+                <div class="navbar--left">             
+                    <div class="navbar--main"><a href="">Trang Chủ</a></div>
+                    <div class="navbar--intro"><a href="">Giới Thiệu</a></div>
+                    <div class="navbar--pro"><a href="">Sản Phẩm</a>
+                        <div class="list--pro">
+                            <li class="cup--list"><a href="">Ly</a>
+                                <ul>
+                                    <li><a href="">Ly Gỗ</a></li>
+                                    <li><a href="">Ly Sứ</a></li>
+                                    <li><a href="">Ly Giấy</a></li>
+                                </ul> 
+                            </li>                      
+                            <li class="bowl-list"><a href="">Chén</a>
+                                <ul>
+                                    <li><a href="">Chén Inox</a></li>
+                                    <li><a href="">Chén Sứ</a></li>
+                                    <li><a href="">Chén Giấy</a></li>
+                                </ul> 
+                            </li>                      
+                        </div>
                     </div>
+                    <div class="navbar--info"><a href="">Thông Tin</a></div>  
                 </div>
-                <div class="navbar--info"><a href="">Thông Tin</a></div>  
+                <div class="navbar--mid">
+                    <div class="navbar--logo"><img width="90" src="greenfrog.img.png"></div>                                              
+                </div>
+                <div class="navbar--right">
+                    <div class="navbar--icon__search"><input placeholder="Tìm Kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="navbar--icon__user"><i class="fa-solid fa-user"></i></div>
+                    <div class="navbar--icon__bag"><i class="fa-solid fa-bag-shopping"></i></div>
+                </div>
             </div>
-            <div class="navbar--mid">
-                <div class="navbar--logo"><img width="90" src="greenfrog.img.png"></div>                                              
-            </div>
-            <div class="navbar--right">
-                <div class="navbar--icon__search"><input placeholder="Tìm Kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div class="navbar--icon__user"><i class="fa-solid fa-user"></i></div>
-                <div class="navbar--icon__bag"><i class="fa-solid fa-bag-shopping"></i></div>
+        </header>
+        
+        <div id="container">
+            <div class="nav--other">
+                <div class="nav--other__new__left"><a href="">SẢN PHẨM MỚI NHẤT</a></div>
+                <div class="nav--other__sale__center"><a href="">SẢM PHẨM SALE UP TO 30%</a></div>
+                <div class="nav--other__event__right"><a href="">SỰ KIỆN NỔI BẬT</a></div>
             </div>
 
+            <section id="Banner">
+                <div class="img--banner">
+                    <img src="/Web-TH/img-banner/sale.jpg">
+                    <img src="/Web-TH/img-banner/slogan.jpg">
+                    <img src="/Web-TH/img-banner/pro.jpg">                                 
+                </div>
+            </section>
         </div>
 
-        <div class = "osuu"></div>   
-           
+        
+        
+             
     </body>
+
+    
 </html> 
