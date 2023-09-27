@@ -15,9 +15,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        
     </head>
-    <script src="code.js"></script>
+    
     <body> 
+        <script src="code.js"></script>
         <header>           
             <div class="navbar">
                 <div class="navbar--left">             
@@ -25,14 +27,14 @@
                     <div class="navbar--intro"><a href="">Giới Thiệu</a></div>
                     <div class="navbar--pro"><a href="">Sản Phẩm</a>
                         <div class="list--pro">
-                            <li class="cup--list"><a href="">Ly</a>
+                            <li class="list-cup"><a href="">Ly</a>
                                 <ul>
                                     <li><a href="">Ly Gỗ</a></li>
                                     <li><a href="">Ly Sứ</a></li>
                                     <li><a href="">Ly Giấy</a></li>
                                 </ul> 
                             </li>                      
-                            <li class="bowl-list"><a href="">Chén</a>
+                            <li class="list-bowl"><a href="">Chén</a>
                                 <ul>
                                     <li><a href="">Chén Inox</a></li>
                                     <li><a href="">Chén Sứ</a></li>
@@ -43,9 +45,11 @@
                     </div>
                     <div class="navbar--info"><a href="">Thông Tin</a></div>  
                 </div>
+
                 <div class="navbar--mid">
                     <div class="navbar--logo"><img width="90" src="greenfrog.img.png"></div>                                              
                 </div>
+
                 <div class="navbar--right">
                     <div class="navbar--icon__search"><input placeholder="Tìm Kiếm" type="text"><i class="fa-solid fa-magnifying-glass"></i></div>
                     <div class="navbar--icon__user"><i class="fa-solid fa-user"></i></div>
@@ -61,16 +65,57 @@
                 <div class="nav--other__event__right"><a href="">SỰ KIỆN NỔI BẬT</a></div>
             </div>
 
-            <section id="Banner">
-                <div class="img--banner">
-                    <img src="/Web-TH/img-banner/sale.jpg">
+            <section id="banner-silder">
+                <div class="silder">
                     <img src="/Web-TH/img-banner/slogan.jpg">
-                    <img src="/Web-TH/img-banner/pro.jpg">                                 
+                    <img src="/Web-TH/img-banner/pro.jpg">
+                    <img src="/Web-TH/img-banner/sale.jpg">                                 
                 </div>
             </section>
+
+            <div class="banner--move">
+                <div class="banner--move__left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                </div>
+                <div class="banner--move__right">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </div>
+            </div>
         </div>
         
     </body>
+    <!--Javascript--->
+    <script>
+        const MyBanners = document.querySelectorAll(".silder img")
+        const MainBanners = document.querySelector('.silder')
+        let index =  0
+        let reban =  MyBanners.length
+        //Chuyển các ảnh về dạng nằm ngang của website 
+        // ==> Gọi các ảnh con(Mybanners) sẽ cộng lại = Tổng của tất cả ảnh(MainBanners)
+        MyBanners.forEach(function(images,index){
+            images.style.left = index*130 + "%"
+        })
+        //Muốn chuyển silde kế tiếp sử dụng Tổng - Kích thức silde trước đó
+        // ChangeBanners = MainBanners - index*size%
+        function ChangeBanners (){
+            index++  
+            //nếu ảnh hết quay lại ảnh từ đầu  
+            if(index >= reban){
+                index = 0
+            }  
+            console.log(index)
+            MainBanners.style.left = "-" + index*130 + "%";                        
+        }
+        setInterval(ChangeBanners,10000)
+    </script>
 
     
 </html> 
+
+
+
+    

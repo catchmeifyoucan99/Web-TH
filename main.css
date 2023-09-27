@@ -1,5 +1,4 @@
 
-
 body{
     margin: 0px;
     padding: 0px;
@@ -18,7 +17,7 @@ body{
 
 .navbar--mid {
     display: flex;
-    margin-right: 12%;
+    margin-right: 9%;
 }
 
 .navbar--left,
@@ -55,7 +54,7 @@ li{
     box-shadow: 0px 1px 3px 0px rgba(70,144,46,0.6);
     -webkit-box-shadow: 0px 1px 3px 0px rgba(70,144,46,0.6);
     -moz-box-shadow: 0px 1px 3px 0px rgba(70,144,46,0.6);
-    right: 100px; 
+    right: 80px; 
     padding: 10px 0 10px 10px;   
     background-color: white;
     visibility: hidden;
@@ -125,7 +124,7 @@ li{
 }
 
 #container{
-    margin: 16px 74px;
+    margin: 13px 74px;
 }
 
 .nav--other{
@@ -162,15 +161,18 @@ li{
     background:  rgba(11, 116, 18, 0.981);
 }
 
-.img--banner{
+/* #banner--silder{
+    position: relative;
+} */
+.silder{
     display: block;
     position: relative;
-    padding-top: 56.25%;
-    margin-top: 16px;
-    transition: 0.3;
+    /* padding-top: 56.25%; */
+    margin-top: 11px;
+    transition: 0.3s;
 }
 
-.img--banner img{
+.silder img{
     display: block;
     position: absolute;
     width: 100%;
@@ -178,4 +180,35 @@ li{
     top: 0;
     left: 0;
     border-radius: 85px 0 85px 0;
+
+}
+
+.banner--move{
+    display: flex;
+    cursor: pointer;
+}
+
+.banner--move > div > svg{       
+    color: #BCBDC0; 
+    background: unset;
+    border: 0;
+    width: 44x;
+    height: 44px;    
+}
+
+.banner--move__left{
+    position: absolute;
+    bottom: 250px;
+    margin-left: 25px;
+}
+
+
+.banner--move__right{
+    position: absolute;
+    bottom: 250px;
+    right: 100px;
+}
+
+.banner--move > div > svg:hover{
+    color: rgba(11, 116, 18, 0.981);
 }
