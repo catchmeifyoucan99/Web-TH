@@ -162,8 +162,11 @@ li{
 }
 
 /* #banner--silder{
-    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 530px;
 } */
+
 .silder{
     display: block;
     position: relative;
@@ -180,26 +183,17 @@ li{
     top: 0;
     left: 0;
     border-radius: 85px 0 85px 0;
-
 }
 
 .banner--move{
     display: flex;
-    cursor: pointer;
-}
-
-.banner--move > div > svg{       
-    color: #BCBDC0; 
-    background: unset;
-    border: 0;
-    width: 44x;
-    height: 44px;    
 }
 
 .banner--move__left{
     position: absolute;
     bottom: 250px;
     margin-left: 25px;
+
 }
 
 
@@ -207,8 +201,28 @@ li{
     position: absolute;
     bottom: 250px;
     right: 100px;
+
 }
 
-.banner--move > div > svg:hover{
+.banner--move > div > button {
+    border: none;
+    background-color: transparent;
+    height: 35px;
+    width: 41px;
+    text-align: center;
+    position: relative;
+}
+
+.banner--move > div > button > svg{       
+    color: #BCBDC0; 
+    width: 44x;
+    height: 44px; 
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;  
+}
+
+.banner--move > div > button > svg:hover{
     color: rgba(11, 116, 18, 0.981);
 }
