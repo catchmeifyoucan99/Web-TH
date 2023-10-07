@@ -191,7 +191,7 @@ li{
 
 .banner--move__left{
     position: absolute;
-    bottom: 250px;
+    bottom: 270px;
     margin-left: 25px;
 
 }
@@ -199,7 +199,7 @@ li{
 
 .banner--move__right{
     position: absolute;
-    bottom: 250px;
+    bottom: 270px;
     right: 100px;
 
 }
@@ -226,3 +226,58 @@ li{
 .banner--move > div > button > svg:hover{
     color: rgba(11, 116, 18, 0.981);
 }
+.banner-text {
+    text-align: center;
+    margin-top: 600px; 
+}
+
+
+
+
+.silder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#div-pro-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-pro {
+    height: 250px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.size-img {
+    height: 150px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.box-description {
+    height: 120px;
+    width: 200px;
+    background-color: whitesmoke;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.margin-des {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.box-pro {
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.box {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
